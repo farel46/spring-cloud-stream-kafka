@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cloud-stream
+
+  cloud:
+    function:
+      definition: ingest
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+        binding:
+          ingest-in-0:
+            destination: my.topic.stream
+            group: my-group
+            consumer:
+              batch-mode: false
