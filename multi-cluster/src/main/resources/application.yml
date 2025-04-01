@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: cloud-stream
+  cloud:
+    function:
+      definition: orderCreated;orderProcessed
+    stream:
+      bindings:
+        orderCreated-in-0:
+          destination: order.created
+          group: spot
+          binder: kafka-one
+        orderProcessed-in-0:
+          destination: order.processed
+          group: spot
+          binder: kafka-two
+      kafka:
+        binder:
+          auto-create-topics: true
+        bindings:
+          orderCreated-in-0:
+            consumer:
+              enableDlq: true
+              dlqName: dlq.order.created
+              autoCommitOnError: true
+              autoCommitOffset: true
+          orderProcessed-in-0:
+            consumer:
+              enableDlq: true
+              dlqName: dlq.order.processed
+              autoCommitOnError: true
+              autoCommitOffset: true
+      binders:
+        kafka-one:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream:
+                  kafka:
+                    binder:
+                      brokers: localhost:9092
+        kafka-two:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream:
+                  kafka:
+                    binder:
+                      brokers: localhost:9093
+
