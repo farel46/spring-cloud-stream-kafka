@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: stream-db
+
+  cloud:
+    function:
+      definition: ingest
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+        binding:
+          ingest-in-0:
+            destination: my.topic.stream
+            group: my-group
+            consumer:
+              batch-mode: false
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        orm.jdbc.bind: TRACE
+    type.descriptor.sql: TRACE
